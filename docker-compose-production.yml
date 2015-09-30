@@ -1,0 +1,5 @@
+app:
+  image: '159.203.12.55:5000/my_awesome_app'
+  ports:
+    - 3000:3000
+  command: 'node server.js'

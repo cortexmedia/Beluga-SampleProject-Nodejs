@@ -1,0 +1,15 @@
+#!/bin/bash
+REPOSITORY_URL="159.203.12.55:5000"
+APP_DIRECTORY="/root/my_awesome_app"
+DOCKER_COMPOSE_FILE="docker-compose-production.yml"
+
+# User to RSync with
+SERVER_USER="root"
+# User that runs docker-compose & containers
+DOCKER_USER="root"
+
+SERVER_IP="159.203.12.55"
+
+ARRAY_DELIMITER=";"
+declare -a IMAGES_TO_BUILD
+IMAGES_TO_BUILD[0]="mrheaume/my_awesome_app;.;my_awesome_app"
